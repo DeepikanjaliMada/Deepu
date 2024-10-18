@@ -1,0 +1,20 @@
+#include <stdio.h>
+int result=1,i=0;
+int powe(int m,int n)
+{
+   while(i<n)
+   {
+       result=result*m;
+       i++;
+       powe(m,n);
+   }
+   return result;
+}
+int main() {
+ int n,p;
+ printf("enter number");
+ scanf("%d",&n);
+ printf("enter power");
+ scanf("%d",&p);
+ printf("the power of%d and %d is %d",n,p,powe(n,p));
+}
