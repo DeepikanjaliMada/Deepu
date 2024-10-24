@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int m=0, n=1, i,nth, temp;
+    printf("enter the nth term of fibonacci series");
+    scanf("%d",&nth);
+    for(i=0;i<nth;i++)
+    {
+        temp=n;
+        n=m+n;
+        m=temp;
+    printf("\n the series is:%d",m);
+    }
+}
